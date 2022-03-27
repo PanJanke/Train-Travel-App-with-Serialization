@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <ChoiceBox fx:id="FromCheckBox" layoutX="49.0" layoutY="56.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="ToCheckBox" layoutX="214.0" layoutY="56.0" prefWidth="150.0" />
+      <CheckBox fx:id="checkboxtime" layoutX="398.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Time" />
+      <Label layoutX="49.0" layoutY="38.0" prefHeight="17.0" prefWidth="132.0" text="From:" />
+      <Label layoutX="217.0" layoutY="38.0" prefHeight="17.0" prefWidth="132.0" text="To:" />
+      <TextField fx:id="TimeTextFile" layoutX="398.0" layoutY="56.0" prefHeight="25.0" prefWidth="78.0" />
+      <ListView fx:id="myListView" layoutX="31.0" layoutY="139.0" onMouseClicked="#DisplayWindow" prefHeight="177.0" prefWidth="538.0" />
+      <Button fx:id="ShowButton" layoutX="516.0" layoutY="56.0" mnemonicParsing="false" onAction="#showList" prefHeight="25.0" prefWidth="55.0" text="Show" />
+      <Label fx:id="TimeInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="373.0" layoutY="90.0" prefHeight="17.0" prefWidth="132.0" text="0-23" />
+      <Label fx:id="trainInfo" layoutX="35.0" layoutY="113.0" prefHeight="17.0" prefWidth="530.0" text="Train info:" />
+      <ListView fx:id="buyedTickets" layoutX="31.0" layoutY="342.0" prefHeight="200.0" prefWidth="538.0" />
+      <Button fx:id="BuyButton" layoutX="458.0" layoutY="558.0" mnemonicParsing="false" onMouseClicked="#BuyTicket" text="Buy" />
+      <Label fx:id="Buyinfo" layoutX="231.0" layoutY="562.0" prefHeight="17.0" prefWidth="208.0" text="Info:" />
+      <Label layoutX="31.0" layoutY="325.0" prefHeight="17.0" prefWidth="167.0" text="My tickets:" />
+      <Button fx:id="Resignebutton" layoutX="518.0" layoutY="558.0" mnemonicParsing="false" onMouseClicked="#ticketResigned" text="Resigne" />
+      <Button fx:id="SaveButton" layoutX="31.0" layoutY="558.0" mnemonicParsing="false" onMouseClicked="#SaveTickets" text="Save" />
+   </children>
+</AnchorPane>
